@@ -1,5 +1,21 @@
 <script>
-  let sharks = [{question: 'How many reproductive organs do male sharks have?', answer1: '3'}]
-  let big cats = [{question: 'If you throw a tiger in a lake will it drown?', answer1: 'no', answer2: 'yes'}]
-  let frogs = [{question: 'Which of the following is a toad?', answer1: 'dnsghsjdfhzk'}]
+  let questions = [{questionId: 1 , hint1:'' , hint2:'', hint3: ''},]
+
+function getRandom() {
+  let number = Math.floor(Math.random() * 11);
+return number
+
+
+}
+
+
+
+
+
+
 </script>
+
+{#each questions as {questionId, hint1, hint2, hint3}}
+
+<p>{questions.hint1}</p>
+{/each}
